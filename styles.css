@@ -1,0 +1,397 @@
+/* Add some general styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* ... (rest of the CSS) ... */
+
+section {
+    padding: 40px 5%; /* Adds space around each section's content */
+    background-color: #FAFAFA; /* A very light gray background for a subtle contrast */
+    border-radius: 5px; /* Rounded corners for each section */
+    margin: 20px 0; /* Space between sections */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Space between the heading and the content */
+    border-bottom: 2px solid #0077CC; /* A bottom border for emphasis */
+    padding-bottom: 10px; /* Space between the text and the border */
+    color: #0077CC; /* Matching the color scheme */
+}
+
+p {
+    font-size: 16px; /* A slightly larger font size for better readability */
+    line-height: 1.7; /* Improved line height for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* This will give a slight emphasis to the first line of each paragraph */
+p::first-line {
+    font-weight: bold;
+    color: #555;
+}
+
+.dish h3 {
+    color: #0077CC; /* Main theme color */
+    margin-top: 10px;
+}
+
+/* ... (rest of the CSS) ... */
+
+/* ... existing CSS ... */
+
+#logo-text {
+    display: flex;                 /* To lay out the image and text side by side */
+    align-items: center;           /* To vertically center the text with the image */
+    font-family: "Pacifico", cursive;
+    font-size: 36px;
+    font-weight: normal;
+    color: #0077CC;
+}
+
+#logo-image {
+    width: 50px;                   /* Adjust based on your desired size */
+    height: 50px;
+    border-radius: 50%;            /* Makes the logo circular */
+    margin-right: 15px;            /* Some space between the logo and the text */
+    object-fit: cover;             /* Ensures the image covers the whole area without distortion, especially if it isn't square */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: a subtle shadow for some depth */
+}
+
+/* ... rest of the CSS ... */
+
+
+section#home h1 {
+    font-family: "Raleway", sans-serif;  /* Stylish font for "Welcome to My Cafe" */
+    font-size: 48px;  /* Larger font size */
+    font-weight: 700;  /* Bold weight for emphasis */
+    color: #0077CC;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  /* A subtle text shadow for depth */
+    margin-bottom: 30px;  /* Added space between heading and content below */
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;  /* Increasing padding to ensure adequate space for the navigation bar */
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensuring header stays above other elements */
+    z-index: 10;  /* A higher z-index will make sure it is visually above other sections */
+}
+
+
+
+
+nav {
+    flex-grow: 2;  /* Allows the navigation to take up available space */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;  /* Distributes the space between links */
+    width: 100%;
+}
+
+
+
+
+/* ... (rest of the CSS) ... */
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;  /* Centers the menu items horizontally */
+    width: 100%;
+}
+
+nav li {
+    margin: 0 15px;  /* Increase the space between list items for better visibility */
+}
+
+nav a {
+    padding: 12px 18px;  /* Increase padding to make the clickable area larger */
+    font-size: 16px;  /* Increase the font size */
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0077CC;
+    color: white;
+}
+
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.dish {
+    border: 1px solid #e4e4e4;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dish:hover {
+    transform: translateY(-10px);
+}
+
+.dish-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #0b0b0b;  /* Main theme color */
+}
+
+.footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* For the logo */
+/* ... (rest of the CSS) ... */
+
+#logo {
+    height: 40px;  /* Reduced from 50px */
+    width: auto;
+    margin-right: 15px;
+}
+
+/* For the main banner image in the home section */
+#home img {
+    width: 100%;
+    max-height: 350px;  /* Added a max-height property */
+    object-fit: cover;  /* Ensures the image covers the full container without distortion */
+}
+
+.dish .dish-image {
+    width: 300px;  /* Arbitrary size, adjust as needed */
+    height: 200px;
+    object-fit: cover;  /* Ensures the image covers the full container without distortion */
+}
+/* ... (rest of the CSS) ... */
+
+/* For the about image */
+.about-image {
+    width: 500px;   /* Arbitrary width, adjust as needed */
+    height: auto;  /* Keeps the aspect ratio intact */
+    display: block;
+    margin: 0 auto;  /* Centers the image horizontally */
+}
+
+/* For the contact image */
+.contact-image {
+    width: 500px;   /* Arbitrary width, adjust as needed */
+    height: auto;  /* Keeps the aspect ratio intact */
+    display: block;
+    margin: 0 auto;  /* Centers the image horizontally */
+}
+
+
+footer {
+    width: 100%;
+    clear: both;  /* This ensures that the footer is below any floated elements */
+}
+/* ... (rest of the CSS) ... */
+
+/* ... existing CSS ... */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center-align items for a cohesive look */
+    text-align: center;   /* Center-aligned text for the title and description */
+    padding: 60px 5%;     /* Increased padding for more breathing space */
+    background-color: #f6f5f2; /* A light background for contrast */
+}
+
+#home h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 54px;  /* Increased font size for prominence */
+    font-weight: 700;
+    color: #3B945E;   /* Using the primary theme color */
+    margin-bottom: 30px;
+}
+
+#home img {
+    max-width: 80%;    /* Limiting width to avoid the image being too large */
+    margin: 20px 0;    /* Space above and below the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#home p {
+    font-size: 20px;  /* Increased font size for better visibility */
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;  /* Limiting width for optimal reading length */
+    margin: 0 auto;   /* Centering block element */
+}
+
+.contact-container { 
+    display: flex;                 /* Makes this container a flex container */
+    justify-content: space-between; /* Puts some space between the children */
+    align-items: flex-start;       /* Aligns items to the top */
+    flex-wrap: wrap;               /* Allows items to wrap if there isn't enough space */
+}
+
+.contact-details, 
+.testimonial-form {
+    flex: 1;                       /* Each child will take up an equal amount of space */
+    margin: 20px;                  /* Gives each child some margin */
+    box-sizing: border-box;        /* To ensure padding and border are included in the width */
+}
+
+
+
+.contact-details {
+    
+    padding: 20px;
+    background-color: #FFFBEA; /* Slightly different shade for a layered effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3B945E;
+}
+
+.details-list p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.details-list p strong {
+    font-weight: bold;
+    color: #3B945E;
+}
+
+.contact-image {
+    width: 100%;  /* Take the full width of its parent */
+    max-height: 200px; /* Limit the height */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+/* ... existing CSS ... */
+
+#contact p {
+    font-weight:400;  /* This is the 'normal' font weight */
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    max-width: 1000px;  /* If you have set a max width for the paragraph */
+    margin: 0 auto;   /* Centering block element if you've done so */
+}
+
+.testimonial-form {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-form h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #0077CC;
+}
+
+.testimonial-form label {
+    font-weight: bold;
+}
+
+.testimonial-form input, .testimonial-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.testimonial-form button {
+    background-color: #0077CC;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.testimonial-form button:hover {
+    background-color: #0055A4;
+}
+/* ... (rest of the CSS) ... */
+
+#about {
+    display: flex;
+    align-items: center;  /* Vertically center aligns the content and image */
+    background-color: #F8F8F8;  /* A light background for distinction */
+    padding: 40px 5%;
+    border-radius: 5px;  /* Rounded corners for the section */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 40px;  /* Some space between the content and the image */
+}
+
+#about h2 {
+    font-size: 28px;
+    color: #0077CC;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077CC;
+    padding-bottom: 10px;
+}
+
+#about p {
+    font-family: "Raleway", sans-serif;  
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 350px;
+    border-radius: 10px;  
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    margin-left: 20px;
+}
+

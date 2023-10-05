@@ -1,0 +1,110 @@
+-<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@700&display=swap">
+</head>
+
+<body style="background-color: #F6F4E6;"> <!-- Light creamy background -->
+
+    <header>
+        <div id="logo-text">
+            <img src="images/logo.png" alt="My Cafe Logo" id="logo-image">
+            My Cafe
+        </div>
+          <!-- Changed from an image to text-based logo -->
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="home">
+        <h1>Welcome to My Cafe</h1>
+        <img src="images/image1.jpg" alt="Dining setting at My Cafe">
+        <p>The best place for delicious food and great atmosphere.</p>
+    </section>
+    
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <!-- Pizza -->
+                <div class="dish">
+                    <img src="images/pizza.jpg" alt="Pizza" class="dish-image">
+                    <h3>Pizza</h3>
+                    <p>A traditional thin-crust pizza...</p>
+                    <p class="price">$15</p>
+                </div>
+                
+                <!-- Burger -->
+                <div class="dish">
+                    <img src="images/burger.jpg" alt="Burger" class="dish-image">
+                    <h3>Burger</h3>
+                    <p>Juicy and succulent beef patty...</p>
+                    <p class="price">$12</p>
+                </div>
+                
+                <!-- Pasta -->
+                <div class="dish">
+                    <img src="images/pasta.jpg" alt="Pasta" class="dish-image">
+                    <h3>Pasta</h3>
+                    <p>Al dente pasta, tossed in a rich...</p>
+                    <p class="price">$14</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>We have been serving the community for over 20 years with the best dishes from around the world, combining traditional flavors with innovative techniques. Our commitment to quality and community has made us a landmark in the culinary scene.</p>
+            </div>
+            <img src="images/about.jpg" alt="About My Cafe" class="about-image">
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>If you have any questions, please get in touch with us using the details below also,if you'd like to share your thoughts about your experience at our cafe, please do so in the space provided.</strong></p>
+        
+            <div class="contact-container">
+                <div class="contact-details">
+                    <img src="images/contact.jpg" alt="Description of the Image" class="contact-image">
+                    <div>
+                        <p><strong>Email:</strong> example@email.com</p>
+                        <p><strong>Phone:</strong> 123-456-7890</p>
+                        <p><strong>Address:</strong> 123 Cafe St, Food City</p> <!-- Added an example address -->
+                        <p><strong>Operation Hours:</strong> 9am - 9pm</p> <!-- Added operation hours -->
+                    </div>
+                </div>
+        
+                <div class="testimonial-form">
+                    <h3>Share Your Thoughts</h3>
+                    <label for="visitorName">Your Name:</label>
+                    <input type="text" id="visitorName" name="visitorName">
+        
+                    <label for="thoughts">Your Experience:</label>
+                    <textarea id="thoughts" name="thoughts" rows="4" placeholder="Share your thoughts about your visit..."></textarea>
+        
+                    <button type="button" onclick="submitThoughts()">Share</button>
+                </div>
+            </div>
+        </section>
+        
+        
+         <footer>
+        <p>© 2023 My Cafe. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
